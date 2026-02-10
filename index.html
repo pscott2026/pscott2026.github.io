@@ -2,52 +2,66 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paulygamy Brewing Co.</title>
+  <title>Paulygamy Brewing Co. — Coming Soon</title>
   <style>
-    body {
+    /* Basic reset and font */
+    * {
       margin: 0;
-      font-family: 'Helvetica Neue', Arial, sans-serif;
-      background: #fdf6e3;
-      color: #333;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #111; /* dark background for contrast */
+      color: #fff;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
       text-align: center;
-      flex-direction: column;
+      padding: 20px;
     }
+
+    /* Logo styling */
+    img.logo {
+      width: 250px;       /* Adjust width */
+      max-width: 80%;     /* Responsive */
+      margin-bottom: 30px;
+    }
+
+    /* Headings */
     h1 {
-      font-size: 3em;
-      margin: 0.2em 0;
-      color: #b7410e; /* warm amber color like beer */
+      font-size: 2.5em;
+      margin-bottom: 10px;
     }
+
     p {
       font-size: 1.2em;
-      color: #555;
-      margin: 0.5em 0 2em 0;
+      color: #ccc;
     }
-    .footer {
-      font-size: 0.9em;
-      color: #999;
-      margin-top: 2em;
+
+    /* Optional: subtle fade-in animation */
+    body {
+      animation: fadeIn 1s ease-in;
     }
-    @media (max-width: 600px) {
-      h1 { font-size: 2em; }
-      p { font-size: 1em; }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
   </style>
 </head>
 <body>
-    <!-- Logo goes here at the top -->
+  <!-- Logo -->
   <img class="logo" src="logo.png" alt="Paulygamy Brewing Co. Logo">
-  
+
   <!-- Heading -->
   <h1>Paulygamy Brewing Co.</h1>
-  
+
   <!-- Subtext -->
-  <h1>Paulygamy Brewing Co.</h1>
-  <p>Our website is coming soon! Stay tuned.</p>
-  <div class="footer">© 2026 Paulygamy Brewing Co.</div>
+  <p>Coming Soon — Est. 2026</p>
 </body>
 </html>
+
